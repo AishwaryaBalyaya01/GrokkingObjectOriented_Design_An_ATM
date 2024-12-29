@@ -1,3 +1,5 @@
+package Models.Customer;
+
 public class Address {
     private String streetAddress;
     private String city;
@@ -50,13 +52,6 @@ public class Address {
     }
 
     public void setCountry(String country) {
-        this.country = country;
-    }
-    public void updateAddress(String streetAddress, String city, String state, String zipCode, String country){
-        this.streetAddress = streetAddress;
-        this.city = city;
-        this.state = state;
-        this.zipCode = zipCode;
         this.country = country;
     }
 }

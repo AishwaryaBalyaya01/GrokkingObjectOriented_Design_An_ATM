@@ -19,4 +19,9 @@ public class CheckingsAccount extends Account{
         this.setAvailableBalance(balance);
         System.out.println("Checkings Account money deposited: "+amount+" Available balance: "+this.getAvailableBalance());
     }
+
+    @Override
+    public void withdrawMoney(double amount) {
+        System.out.println("You dont have permission to withdraw");
+    }
 }

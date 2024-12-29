@@ -1,6 +1,6 @@
 package Models.Customer;
 
-public class Account {
+public abstract class Account {
     private int accountNumber;
 
     private double availableBalance;
@@ -17,10 +17,6 @@ public class Account {
         this.availableBalance = availableBalance;
     }
 
-    public void depositMoney(double amount){
-        System.out.println("Please mention which account to deposit");
-    }
-    public void withdrawMoney(double amount){
-        System.out.println("Please mention which account to withdraw from");
-    }
+    public abstract void depositMoney(double amount);
+    public abstract void withdrawMoney(double amount);
 }

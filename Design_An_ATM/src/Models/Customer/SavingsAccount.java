@@ -17,7 +17,7 @@ public class SavingsAccount extends Account{
         double balance = this.getAvailableBalance();
         balance+=amount;
         this.setAvailableBalance(balance);
-        System.out.println("Checkings Account money deposited: "+amount+" Available balance: "+this.getAvailableBalance());
+        System.out.println("Savings Account money deposited: "+amount+" Available balance: "+this.getAvailableBalance());
     }
 
     @Override
@@ -32,5 +32,6 @@ public class SavingsAccount extends Account{
             return;
         }
         this.setAvailableBalance(this.getAvailableBalance()-amount);
+        System.out.println("Amount: "+amount+" withdrawn, available balance is: "+this.getAvailableBalance());
     }
 }
